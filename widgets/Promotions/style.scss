@@ -1,0 +1,167 @@
+.promotions {
+  position: relative;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  border-radius: 2.5rem;
+  padding: 12.5rem 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url("~/public/assets/promotionIcon.png") no-repeat;
+    background-position: top right;
+    z-index: 0;
+    pointer-events: none;
+
+    @media (max-width: 760px) {
+      background-size: 15rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 6rem;
+
+    @media (max-width: 1560px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 1080px) {
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    background-color: #fff;
+    border-radius: 2.5rem;
+    z-index: 1;
+
+    @media (max-width: 1080px) {
+      width: 60%;
+
+      &:nth-child(even) {
+        align-self: flex-end;
+      }
+
+      &:nth-child(odd) {
+        align-self: flex-start;
+      }
+    }
+
+    @media (max-width: 760px) {
+      align-self: center !important;
+      width: 60rem;
+    }
+
+    @media (max-width: 550px) {
+      width: 50rem;
+    }
+
+    @media (max-width: 450px) {
+      width: 40rem;
+    }
+  }
+
+  &__info {
+    width: 81%;
+    height: 100%;
+    gap: 1rem;
+    justify-content: space-between;
+
+    @media (max-width: 1080px) {
+      & > .info__text:first-child {
+        font-size: 3rem;
+      }
+    }
+
+    @media (max-width: 550px) {
+      & > .info__text:first-child {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 450px) {
+      & > .info__text:first-child {
+        font-size: 2.25rem;
+      }
+    }
+  }
+
+  &__img {
+    border-radius: 1.25rem;
+  }
+
+  &__button {
+    bottom: 2%;
+    right: 5%;
+    width: 52px;
+    height: 52px;
+
+    @media (max-width: 550px) {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  &__morePromotions {
+    width: 59.875rem;
+    margin: 7.5rem auto;
+    padding: 2rem;
+    background-color: var(--black80);
+    color: #fff;
+    font-size: 2.75rem;
+    text-transform: none;
+
+    @media (max-width: 550px) {
+      width: 90%;
+    }
+  }
+}
+
+// Анимации для TransitionGroup
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease;
+}
+
+.fade-enter-from {
+  opacity: 0;
+  // transform: translateY(30px);
+}
+
+.fade-enter-to {
+  opacity: 1;
+  // transform: translateY(0);
+}
+
+.fade-leave-from {
+  opacity: 1;
+  // transform: translateY(0);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  // transform: translateY(-30px);
+}
+
+// Важно! Для правильного позиционирования при удалении
+.fade-leave-active {
+  position: absolute;
+}
+
+// Для плавного перемещения остальных элементов
+.fade-move {
+  transition: transform 0.5s ease;
+}

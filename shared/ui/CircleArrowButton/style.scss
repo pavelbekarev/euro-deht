@@ -1,0 +1,19 @@
+.circleArrowButton {
+  position: absolute;
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+  background-color: #c22032;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
+
+  &--visible {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,31 @@
+.info {
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    font-family: var(--fontSemiBold);
+    font-size: 2.5rem;
+
+    &-description {
+      font-size: 1.5rem;
+      color: var(--black40);
+    }
+
+    &--accent {
+      color: #c22032;
+
+      @media (max-width: 680px) {
+        font-size: 2.25rem;
+      }
+    }
+
+    &-title {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+
+      @media (max-width: 680px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

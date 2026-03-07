@@ -1,0 +1,170 @@
+.promotionBanner {
+  position: relative;
+  margin: 15rem 0 !important;
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--black70);
+  border-radius: 2.5rem;
+  padding: 5rem 0;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 15%;
+    right: -10%;
+    background: url("~/public/assets/promotionBanner__bg.png") no-repeat;
+    background-size: contain;
+    background-position: right;
+    pointer-events: none;
+    z-index: 0;
+
+    @media (max-width: 1300px) {
+      background-size: contain;
+      background-position: right;
+      top: 40%;
+      height: 60%;
+    }
+
+    @media (max-width: 970px) {
+      background-position: center;
+      background-size: cover;
+      right: 0;
+      height: 50%;
+      top: 55%;
+    }
+
+    @media (max-width: 640px) {
+      height: 40%;
+      top: 65%;
+    }
+
+    @media (max-width: 500px) {
+      height: 40%;
+      top: 65%;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    height: 80vh;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__title {
+    color: #fff;
+    width: 85rem;
+
+    @media (max-width: 850px) {
+      width: auto;
+    }
+  }
+
+  &__label {
+    display: inline-flex;
+    width: 20rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2.5rem;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: var(--fontRegular);
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+  }
+
+  &__promotion {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @media (max-width: 850px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 5rem;
+    text-transform: uppercase;
+
+    @media (max-width: 790px) {
+      font-size: 2.5rem;
+    }
+
+    &--large {
+      font-size: 9rem;
+      font-family: var(--fontBold);
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 2.5rem;
+      z-index: 1;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: -2px;
+        border-radius: 3rem;
+        padding: 4px;
+        background: linear-gradient(
+          270deg,
+          rgb(102, 102, 102),
+          rgb(255, 255, 255) 100%
+        );
+        -webkit-mask:
+          linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask:
+          linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+        z-index: -1;
+      }
+
+      @media (max-width: 790px) {
+        font-size: 5.625rem;
+      }
+    }
+  }
+
+  &__bookButton {
+    position: absolute;
+    bottom: 5%;
+    padding: 22px 103px;
+    gap: 1rem;
+    background-color: #c22032;
+    font-size: 3rem;
+    color: #fff;
+    z-index: 1;
+
+    @media (max-width: 1300px) {
+      bottom: 40%;
+    }
+
+    @media (max-width: 850px) {
+      position: relative;
+      width: 70% !important;
+      padding: 22px 0;
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 420px) {
+      width: auto !important;
+      margin-top: 5rem;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.featHistory {
+  margin: 2.5rem 0;
+  border-radius: 2.5rem;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  padding-top: 12.5rem;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 7.5rem;
+
+    @media (max-width: 1260px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 760px) {
+      display: flex;
+      flex-direction: column;
+      gap: 6rem;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    @media (max-width: 760px) {
+    }
+  }
+
+  &__img {
+    border-radius: 7rem;
+    width: 100%;
+  }
+
+  &__case-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    width: 100%;
+    transition:
+      max-height 0.3s ease,
+      opacity 0.3s ease,
+      transform 0.3s ease;
+
+    &--visible {
+      transform: translateY(20px);
+      max-height: 500px;
+      opacity: 1;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__case {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 4rem 2rem;
+    border-radius: 2.5rem;
+    background-color: var(--black80);
+    transition: all 0.3s ease;
+  }
+
+  &__text {
+    color: #fff;
+
+    &-heading {
+      font-size: 3rem;
+
+      @media (max-width: 900px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 440px) {
+        font-size: 2rem;
+      }
+    }
+
+    &-answer {
+      font-family: var(--fontMedium);
+      font-size: 2rem;
+      color: var(--white70);
+    }
+
+    &-subtitle {
+      text-transform: none;
+    }
+  }
+
+  &__text {
+    color: #fff;
+  }
+
+  &__showDetailsButton {
+    top: 4rem;
+    right: 5%;
+
+    &--visible {
+      transform: rotate(0deg) !important;
+    }
+  }
+
+  &__showFeedbackForm {
+    padding: 2rem;
+    font-family: var(--fontSemiBold);
+    font-size: 2.25rem;
+    color: #fff;
+    background-color: #c22032;
+    width: 100%;
+  }
+}
+
+.showDetails {
+  &-enter-active,
+  &-leave-active {
+    transition: opacity 0.5s ease;
+  }
+}

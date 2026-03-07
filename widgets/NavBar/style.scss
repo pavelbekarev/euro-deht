@@ -1,0 +1,77 @@
+.navBar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1400px) {
+    &:not(:first-child) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 3.75rem;
+
+    &--expanded {
+      position: absolute;
+      display: inline-flex !important;
+      flex-direction: column;
+      justify-content: center;
+      // align-items: center;
+
+      border-radius: 2.5rem;
+      padding: 2rem 2rem;
+      top: 0%;
+      right: 5rem;
+      animation: menuAppear 0.3s forwards;
+      background-color: #fff;
+
+      path {
+        fill: white;
+        stroke: #e0e0e0;
+        stroke-width: 4;
+      }
+    }
+
+    @media (max-width: 1520px) {
+      gap: 1.75rem;
+    }
+
+    @media (max-width: 1400px) {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-size: 2rem;
+    font-family: var(--fontRegular);
+    text-decoration: none;
+    color: var(--black70);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translate(5px, -5px);
+    }
+  }
+}
+
+@keyframes menuAppear {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

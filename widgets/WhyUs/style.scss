@@ -1,0 +1,107 @@
+.whyUs {
+  min-height: 100vh;
+  padding: 12.5rem 0;
+  background-color: #f7f7f7;
+  border-radius: 2.5rem;
+
+  &__subtitle {
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    color: var(--black70);
+    font-family: var(--fontMedium);
+    text-transform: none;
+    font-size: 3rem;
+    width: 50%;
+
+    @media (max-width: 768px) {
+      width: 70%;
+    }
+
+    @media (max-width: 500px) {
+      width: 90%;
+      font-size: 2.5rem;
+    }
+
+    &--accent {
+      font-weight: 900;
+      font-family: var(--fontBold);
+    }
+  }
+
+  &__advantages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 5rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 2rem;
+
+      &-img {
+        width: 20%;
+        object-fit: contain;
+      }
+
+      &-text {
+        font-family: var(--fontSemiBold);
+        font-size: 2.75rem;
+        color: var(--black80);
+        text-align: center;
+
+        @media (max-width: 500px) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  &__videoPlay {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    margin: 8.5rem auto;
+
+    @media (max-width: 600px) {
+      padding: 0;
+      height: 25rem;
+    }
+
+    &-videoImage {
+      border-radius: 2.5rem;
+
+      @media (max-width: 600px) {
+        height: 100%;
+      }
+    }
+
+    &-playIcon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20%;
+      height: 20%;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s ease;
+
+      &:active {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+  }
+}

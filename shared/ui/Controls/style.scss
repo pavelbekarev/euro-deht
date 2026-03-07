@@ -1,0 +1,36 @@
+.controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+
+    @media (max-width: 550px) {
+      display: none;
+    }
+
+    & > * {
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: translate(5px, -5px);
+      }
+    }
+  }
+
+  &__submitButton {
+    background-color: var(--black80);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-family: var(--fontMedium);
+    color: #fff;
+
+    @media (max-width: 440px) {
+      display: none;
+    }
+  }
+}

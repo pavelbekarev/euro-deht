@@ -1,0 +1,71 @@
+.makeAppointment {
+  &__fields {
+    margin: 7rem 0 5rem 0;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40%;
+
+    @media (max-width: 1100px) {
+      width: 70%;
+    }
+
+    @media (max-width: 640px) {
+      width: 100%;
+    }
+
+    &--inline {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &-item {
+      width: 100%;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 2.5rem;
+      border: none;
+
+      &--checkbox {
+        width: 3rem;
+        height: 3rem;
+        accent-color: red;
+      }
+    }
+
+    &-label {
+      font-size: 2rem;
+      color: #fff;
+      font-family: var(--fontSemiBold);
+      font-weight: 100;
+
+      &--underscore {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__bookButton {
+    padding: 22px 103px;
+    gap: 1rem;
+    background-color: #c22032;
+    font-size: 3rem;
+    color: #fff;
+
+    @media (max-width: 640px) {
+      margin: 0 auto;
+      font-size: 2.25rem;
+    }
+
+    @media (max-width: 500px) {
+      width: 90%;
+      padding: 2.5rem 0;
+    }
+  }
+}
