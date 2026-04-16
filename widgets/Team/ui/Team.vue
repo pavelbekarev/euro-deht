@@ -3,8 +3,8 @@ import { employees } from "~/entities/Employee";
 import "../style.scss";
 import Info from "~/shared/ui/Info";
 import CloudLabel from "~/shared/ui/CloudLabel";
-import CustomSwiper from "~/shared/ui/CustomSwiper/ui/CustomSwiper.vue";
 import { SwiperSlide } from "swiper/vue";
+import CustomSwiper from "~/shared/ui/CustomSwiper";
 
 const useSwiper = ref(false)
 

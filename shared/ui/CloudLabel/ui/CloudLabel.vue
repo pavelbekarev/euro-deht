@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import "../style.scss"
-</script>
+
 <template>
     <div class="cloudLabel">
         <svg class="cloudLabel__bg" width="252" height="177" viewBox="0 0 252 177" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,3 +9,6 @@ import "../style.scss"
         </div>
     </div>
 </template>
+<style scoped>
+@import "../style.scss";
+</style>

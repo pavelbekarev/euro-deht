@@ -2,11 +2,6 @@
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import type { Swiper as SwiperClass } from 'swiper';
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import 'swiper/css/scrollbar'
-import 'swiper/css/autoplay'
 import { defaultBreakpoints } from '~/shared/config/defaultBreakpoints';
 import arrowLeft from "~/public/assets/swiper-arrowLeft.svg"
 import arrowRight from "~/public/assets/swiper-arrowRight.svg"

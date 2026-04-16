@@ -1,3 +1,3 @@
-import CustomSwiper from "./ui/CustomSwiper.vue";
+import CustomSwiper from "./ui/CustomSwiper.client.vue";
 
 export default CustomSwiper;

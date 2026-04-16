@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import "../style.scss"
-</script>
+
 <template>
     <div class="logo">
         <svg width="171" height="57" viewBox="0 0 171 57" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -14,3 +12,6 @@ import "../style.scss"
         </svg>
     </div>
 </template>
+<style scoped>
+@import "../style.scss";
+</style>

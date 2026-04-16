@@ -3,8 +3,8 @@ import "../style.scss"
 import reviewBar from "~/public/assets/reviewBar.jpg"
 import reviewYa from "~/public/assets/yandexReview--mobile.png"
 import reviewCard1 from "~/public/assets/reviewCard1.jpg"
-import CustomSwiper from "~/shared/ui/CustomSwiper";
 import { defaultBreakpoints } from "~/shared/config/defaultBreakpoints";
+import CustomSwiper from "~/shared/ui/CustomSwiper";
 
 const slides = [
     { image: reviewCard1 },

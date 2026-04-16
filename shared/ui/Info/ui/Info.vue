@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import type { Service } from "~/entities/Service/model/types";
-import "../style.scss"
-
 defineProps<{
     data: {
         title: string;
@@ -19,3 +16,6 @@ defineProps<{
         <span v-if="data.description" class="info__text info__text-description">{{ data.description }}</span>
     </div>
 </template>
+<style scoped>
+@import "../style.scss";
+</style>
