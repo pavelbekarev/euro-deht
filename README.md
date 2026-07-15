@@ -1,75 +1,88 @@
-# Nuxt Minimal Starter
+# 🦷 EURO DEHT
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Современный корпоративный сайт стоматологической клиники, разработанный на **Nuxt 3** и **TypeScript**.
 
-## Setup
+Проект демонстрирует навыки построения компонентной архитектуры, адаптивной верстки и использования экосистемы Vue.
 
-Make sure to install dependencies:
+> ⚠️ Проект создан в демонстрационных целях.
+
+---
+
+# 🚀 Демо
+
+https://euro-deht.vercel.app/
+
+---
+
+# ✨ Возможности
+
+- Современный SPA на Nuxt 3
+- Компонентная архитектура
+- Адаптивная верстка
+- Переиспользуемые UI-компоненты
+- TypeScript
+- Оптимизация производительности
+
+---
+
+# 🛠️ Стек
+
+### Frontend
+
+- Nuxt 3
+- Vue 3
+- TypeScript
+- Pinia
+- Vue Router
+- SCSS
+
+---
+
+# 📂 Структура проекта
+
+<img width="268" height="286" alt="image" src="https://github.com/user-attachments/assets/5544f775-14d9-412e-8813-d55e29b0930a" />
+
+Проект построен с использованием возможностей Nuxt 3 и компонентного подхода Vue.
+
+---
+
+# 💡 Что было реализовано
+
+- разработка пользовательского интерфейса;
+- адаптивная верстка;
+- переиспользуемые компоненты;
+- маршрутизация средствами Nuxt;
+- типизация приложения с использованием TypeScript;
+- оптимизация загрузки страниц.
+
+---
+
+# 🎯 Что было целью проекта
+
+Во время разработки основной акцент был сделан на:
+
+- изучении Nuxt 3;
+- компонентном подходе;
+- организации структуры Vue-приложения;
+- создании современного интерфейса.
+
+---
+
+# 🚀 Запуск
 
 ```bash
-# npm
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+---
 
-Build the application for production:
+# 📌 Возможные улучшения
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- интеграция с backend;
+- онлайн-запись;
+- Storybook;
+- unit-тесты;
+- e2e-тестирование;
+- CI/CD.
